@@ -1,0 +1,12 @@
+name: used_car_priceprediction
+title: Used_Car_PricePrediction
+username: dhbfss-omkarsoham-khanvilkar
+account: dhbfss-omkarsoham-khanvilkar
+server: posit.cloud
+hostUrl: https://api.posit.cloud/v1
+appId: 7992467
+bundleId:
+url: https://posit.cloud/content/7992467
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
