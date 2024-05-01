@@ -216,7 +216,7 @@ server <- function(input, output, session) {
       
       predicted_price <- round(predicted_price,2)
       # Format the predicted price with a range of +/- 2 Lacs
-      formatted_price <- paste(predicted_price, "Lacs (+/- 2 Lacs)")
+      formatted_price <- paste(predicted_price, "Lacs")
       
       
       # Return the formatted predicted price

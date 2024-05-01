@@ -24,10 +24,11 @@ data <- data[, !(names(data) %in% c("Name","X.1"))]
 # this column have more than 53 levels or categories 
 
 
-data$Location <- as.factor(data$Location)
-data$Fuel_Type <- as.factor(data$Fuel_Type)
-data$Transmission <- as.factor(data$Transmission)
-data$Owner_Type <- as.factor(data$Owner_Type)
+data$Location <- as.numeric(as.factor(data$Location))
+data$Fuel_Type <- as.numeric( as.factor(data$Fuel_Type))
+data$Transmission <- as.numeric(as.factor(data$Transmission))
+data$Owner_Type <- as.numeric(as.factor(data$Owner_Type))
+# data$Brand<- as.numeric(as.factor(data$Brand))
 data$Brand<- as.factor(data$Brand)
 
 # Divide dataset into training and testing (75% train, 25% test)
@@ -81,7 +82,7 @@ R_squared <- 1 - (RSS / TSS)
 
 print(paste("R-squared-byCalculation:", R_squared))
 
-sum <- summary(lm_model)
+summary(lm_model)
 sum<- data.frame(sum)
 print(sum)
 
